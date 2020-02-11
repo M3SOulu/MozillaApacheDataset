@@ -1,0 +1,15 @@
+[submodule "packages/MozillaApacheDataset-Rpackage"]
+	path = packages/MozillaApacheDataset
+	url = https://github.com/M3SOulu/MozillaApacheDataset-Rpackage
+[submodule "packages/EmoticonFindeR"]
+	path = packages/EmoticonFindeR
+	url = https://github.com/M3SOulu/EmoticonFindeR.git
+[submodule "packages/RSenti4SD"]
+	path = packages/RSenti4SD
+	url = https://github.com/M3SOulu/RSenti4SD.git
+[submodule "packages/RSentiStrength"]
+	path = packages/RSentiStrength
+	url = https://github.com/M3SOulu/RSentiStrength.git
+[submodule "packages/NLoN"]
+	path = packages/NLoN
+	url = https://github.com/M3SOulu/NLoN.git
