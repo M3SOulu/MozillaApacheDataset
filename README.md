@@ -24,8 +24,11 @@ meta-data but not the actual comments so it can be opened on a
 computer with 8GB of memory.
 
 The folder nlp contains a jira and bugzilla folders similar to the
-ones found in the raw folder. Here the folders for each product tag
-contains processed comments:
+with subfolders for each issue tracker product
+(e.g. nlp/bugzilla/mozilla/Firefox contains all files relating to
+Firefox comments). Comments for individual products are split in
+different files in order to limit their size. Here the folders for
+each product tag contains processed comments:
 * X\_nlcomments.parquet: comments filtered to only keep natural
   language.
 * X\_sentences.parquet: natural language split into sentences.
