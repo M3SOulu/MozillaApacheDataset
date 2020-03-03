@@ -3,7 +3,7 @@
 This file contains the description of the fields in each Parquet files
 found at the root of the data folder in the Open Science Framework
 repository. For the description of the files related to natural
-language processing, see (nlp.md).
+language processing, see the [nlp.md](https://github.com/M3SOulu/MozillaApacheDataset/blob/master/doc/nlp.md).
 
 ## Commits
 
