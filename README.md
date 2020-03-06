@@ -5,6 +5,15 @@ This repository contains files related to the MSR 2020 dataset paper
 Development". This serves as a central access point to the
 documentation for the dataset.
 
+The dataset itself is located on
+an [OSF repository](https://osf.io/kvxr4/).
+
+If you reuse this dataset for conducting research, please cite the
+following paper in your publications:
+Claes, Maëlick, and Mika Mäntylä. "Towards automatically identifying
+paid open source developers." Proceedings of the 17th International
+Conference on Mining Software Repositories. 2019.
+
 # Data
 
 The data folder hosted on Open Science Framework contains the dataset
@@ -13,8 +22,8 @@ that most data processing operation can be run on an average modern
 laptop (i.e. with at least 8 GB of memory) using a map reduce
 approach.
 
-The full documentation of the dataset can be found
-in [doc folder](https://github.com/M3SOulu/MozillaApacheDataset/doc)
+The full documentation of the dataset can be found in
+[doc folder](https://github.com/M3SOulu/MozillaApacheDataset/blob/master/data.md)
 of this repository.
 
 The files commits.parquet, issues.parquet and comments.parquet contain
@@ -115,10 +124,10 @@ reproduce the processing pipeline leading to the final dataset.
 The raw and intermediate data is stored in data/raw and contains the following files:
 * Git
   * Each Git repository raw data is either stored as a single JSON
-    file raw/git/<source>/<repo>.json or as multiple JSON files in a
-    folder raw/git/<source>/<repo>
+    file raw/git/\<source\>/\<repo\>.json or as multiple JSON files in a
+    folder raw/git/\<source\>/\<repo\>
   * Each JSON file was converted to 2 Parquet tables
-    <filename>\_log.parquet and <filename>\_diff.parquet
+    \<filename\>\_log.parquet and \<filename\>\_diff.parquet
 * Jira
   * Apache's issue tracker raw data is stored inside
     raw/jira/apache. Individual folders contain issues specific to one

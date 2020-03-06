@@ -7,9 +7,9 @@ structured.
 
 ## Git
 
-Each Git repository has a JSON file (raw/git/<source>/repo.json)
+Each Git repository has a JSON file (raw/git/\<source\>/repo.json)
 generated with Perceval. Each JSON file was converted as a Parquet
-table (raw/git/<source>/repo.parquet) containing the following
+table (raw/git/\<source\>/repo.parquet) containing the following
 columns:
 * source: source of the repository (i.e. Apache or Mozilla)
 * repo: repository name
@@ -30,7 +30,7 @@ columns:
 * action: action on the file
 * added: number of lines added
 * removed: number of lines removed
-* tag: tag used in Perceval (i.e. <source>/<repo>)
+* tag: tag used in Perceval (i.e. \<source\>/\<repo\>)
 * backend: Perceval backend used (i.e. Git)
 
 source, repo, hash, file and action act as a primary key of each row.
@@ -63,15 +63,15 @@ source, repo and hash act as a primary key of each row.
 The Jira data is split based on the product (i.e. project) tag from
 the issue tracker. Each product is also split in different files
 containing at most 10000 issues and stored into a JSON file generated
-with Perceval (raw/jira/apache/<product>/<N>.json with <N>
+with Perceval (raw/jira/apache/\<product\>/\<N\>.json with \<N\>
 representing the sequence number of the file). Different Parquet
 tables are generated:
-* raw/jira/apache/<product>/<N>_issues.parquet: issue metadata.
-* raw/jira/apache/<product>/<N>_history.parquet: history of changes of
+* raw/jira/apache/\<product\>/\<N\>_issues.parquet: issue metadata.
+* raw/jira/apache/\<product\>/\<N\>_history.parquet: history of changes of
   the issue metadata.
-* raw/jira/apache/<product>/<N>_versions.parquet: versions information
+* raw/jira/apache/\<product\>/\<N\>_versions.parquet: versions information
   tagged to issues.
-* raw/jira/apache/<product>/<N>_comments.parquet: issue comments.
+* raw/jira/apache/\<product\>/\<N\>_comments.parquet: issue comments.
 
 ### Issues
 
@@ -141,13 +141,13 @@ source, product, issue\_id and comment\_id act as a primary key of each row.
 The Bugzilla data is split based on the product (i.e. project) tag
 from the issue tracker. Each product is also split in different files
 containing at most 10000 issues and stored into a JSON file generated
-with Perceval (raw/bugzilla/mozilla/<product>/<N>.json with <N>
+with Perceval (raw/bugzilla/mozilla/\<product\>/\<N\>.json with \<N\>
 representing the sequence number of the file). Different Parquet
 tables are generated:
-* raw/bugzilla/mozilla/<product>/<N>_issues.parquet: issue metadata.
-* raw/bugzilla/mozilla/<product>/<N>_history.parquet: history of
+* raw/bugzilla/mozilla/\<product\>/\<N\>_issues.parquet: issue metadata.
+* raw/bugzilla/mozilla/\<product\>/\<N\>_history.parquet: history of
   changes of the issue metadata.
-* raw/bugzilla/mozilla/<product>/<N>_comments.parquet: issue comments.
+* raw/bugzilla/mozilla/\<product\>/\<N\>_comments.parquet: issue comments.
 
 ### Issues
 
