@@ -5,7 +5,7 @@ This repository contains files related to the MSR 2020 dataset paper
 Development". This serves as a central access point to the
 documentation for the dataset.
 
-The dataset itself is located on
+The dataset itself is located in
 an [OSF repository](https://osf.io/kvxr4/).
 
 If you reuse this dataset for conducting research, please cite the
@@ -22,9 +22,9 @@ that most data processing operation can be run on an average modern
 laptop (i.e. with at least 8 GB of memory) using a map reduce
 approach.
 
-The full documentation of the dataset can be found in
-[doc folder](https://github.com/M3SOulu/MozillaApacheDataset/blob/master/data.md)
-of this repository.
+The full documentation of the dataset can be found in the
+[doc folder](https://github.com/M3SOulu/MozillaApacheDataset/blob/master/data.md) of
+this repository.
 
 The files commits.parquet, issues.parquet and comments.parquet contain
 the aggregated metadata from commit repositories and issue
