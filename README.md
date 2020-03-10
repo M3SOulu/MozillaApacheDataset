@@ -14,7 +14,7 @@ Claes, Maëlick, and Mika Mäntylä. "Towards automatically identifying
 paid open source developers." Proceedings of the 17th International
 Conference on Mining Software Repositories. 2019.
 
-# Data
+## Data
 
 The data folder hosted on Open Science Framework contains the dataset
 itself as multiple Parquet files. Data files are organized in a way so
@@ -61,7 +61,7 @@ information. All fields in commits.parquet, issues.parquet,
 comments.parquet and idmerging.parquet containing personal information
 were replaced with SHA1 hashes.
 
-# R packages
+## R packages
 
 The package folder contains several packages, hosted on different
 GitHub repositories, and files needed to process the raw data.
@@ -84,12 +84,21 @@ The other packages are dependencies:
   https://github.com/M3SOulu/RSentiStrength and
   https://github.com/M3SOulu/RSenti4SD.
 
-For simplifying replicability, we also provide a Docker image on
-Docker Hub that contains the packages and all their dependencies
-already installed:
-https://hub.docker.com/repository/docker/claesmaelick/mozilla-apache-dataset
+## Docker image
+
+For simplifying replication, we also provide a Docker image, (hosted on Docker
+Hub)[https://hub.docker.com/repository/docker/claesmaelick/mozilla-apache-dataset],
+that contains the packages and all their dependencies already
+installed.
 The Dockerfile for building the image is included in the package
 folder.
+
+The image corresponding to the published paper can be pulled with the
+command:
+
+```
+docker pull claesmaelick/mozilla-apache-data:msr2020
+```
 
 While the Docker image doesn't include the data itself, a container
 can be created to acces it with the following bash command:
@@ -113,7 +122,7 @@ library(arrow)
 read_parquet("/MozillaApacheDataset/timestamps.parquet
 ```
 
-# Raw data
+## Raw data
 
 The raw and intermediate data files are not included in the dataset,
 mostly for privacy reasons as they contain fields identifying people.
