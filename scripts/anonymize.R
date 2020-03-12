@@ -3,7 +3,7 @@ library(MozillaApacheDataset)
 idmerging <- ReadParquet("idmerging.parquet")
 setnames(idmerging, "key", "key.orig")
 
-identities <- data.table(orig.key=unique(idmerging$key))
+identities <- data.table(key.orig=unique(idmerging$key))
 system.time(identities[, key.hash := sapply(key.orig, digest::sha1)])
 
 idmerging <- identities[idmerging, on="key.orig",
