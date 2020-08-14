@@ -12,7 +12,7 @@ If you reuse this dataset for conducting research, please cite the
 following paper in your publications:
 Claes, Maëlick, and Mika Mäntylä. "Towards automatically identifying
 paid open source developers." Proceedings of the 17th International
-Conference on Mining Software Repositories. 2019.
+Conference on Mining Software Repositories. 2020.
 
 ## Data
 
@@ -20,7 +20,8 @@ The data folder hosted on Open Science Framework contains the dataset
 itself as multiple Parquet files. Data files are organized in a way so
 that most data processing operation can be run on an average modern
 laptop (i.e. with at least 8 GB of memory) using a map reduce
-approach.
+approach. In addition, we also provide a [sample dataset](https://github.com/M3SOulu/MozillaApacheDataset-sample) both in
+Parquet and CSV format.
 
 The full documentation of the dataset can be found in the
 [doc folder](https://github.com/M3SOulu/MozillaApacheDataset/blob/master/data.md) of
