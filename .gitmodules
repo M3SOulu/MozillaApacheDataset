@@ -13,3 +13,6 @@
 [submodule "packages/NLoN"]
 	path = packages/NLoN
 	url = https://github.com/M3SOulu/NLoN.git
+[submodule "sample"]
+	path = sample
+	url = https://github.com/M3SOulu/MozillaApacheDataset-sample.git
