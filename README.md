@@ -6,7 +6,9 @@ Development". This serves as a central access point to the
 documentation for the dataset.
 
 The dataset itself is located in
-an [OSF repository](https://osf.io/kvxr4/).
+an [OSF repository](https://osf.io/kvxr4/) and is licensed under Creative
+Commons Attribution 4.0 International Public License (CC-BY).
+The creation of this dataset was supported by Academy of Finland grant 298020.
 
 If you reuse this dataset for conducting research, please cite the
 following paper in your publications:
